@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Sans-serif;
+}
+.top {
+  background-color: #000;
+  width: 100%;
+  height: 400px;
+}
+
+nav {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 9px 0;
+  position: fixed;
+  top: 0;
+}
+
+.img {
+  width: 60px;
+}
+
+.nav-links a {
+  margin: 0px 30px;
+  color: #000;
+  font-weight: 540;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 20px 0px;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  background-color: #b7302a;
+  width: 0%;
+  bottom: 0;
+  right: 0;
+  transition: 0.2s;
+}
+.nav-links a:hover::after {
+  width: 120%;
+}
+.btn button {
+  background-color: #b7302a;
+  padding: 6px 15px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  background-color: #fff;
+  color: #b7302a;
+  border: 1px solid #b7302a;
+}
+
+.fa-solid {
+  margin-left: 7px;
+}
+.nav-links a:hover .fa-solid {
+  color: #b7302a;
+}
+
+/* -------------------------------banner------------------------------- */
+
+.banner {
+  background-size: contain;
+  background-position: center;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/* -------------------------------------------education----------------------------- */
+
+.education {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(16, 14, 14, 0.181)),
+    url(eductaion-crisis-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.box-1 {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+.box-1 h1 {
+  font-weight: 300;
+  color: #fff;
+  font-size: 45px;
+  padding: 20px 0px;
+}
+.box-1 p {
+  text-align: justify;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.box-2 {
+  flex-basis: 40%;
+  text-align: center;
+}
+.box-2 h1 {
+  font-weight: 300;
+  color: #fff;
+  font-size: 45px;
+  color: yellow;
+}
+
+.clr {
+  margin-top: 7px;
+  color: yellow;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.clr::after {
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circle {
+  margin-top: 25%;
+  padding: 60px 0;
+  height: 160px;
+  width: 160px;
+  background-color: #646464;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  position: relative;
+}
+
+.circle p {
+  font-size: 22px;
+  color: yellow;
+  font-weight: 600;
+}
+.write p {
+  margin-top: 55%;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.write span {
+  font-weight: 700;
+}
+
+/* ------------------------small devices------------------------ */
+
+@media screen and (max-width: 1100px) {
+  .education {
+    flex-direction: column;
+  }
+  .box-1,
+  .box-2 {
+    flex-basis: 100%;
+    padding: 0px 30px;
+    font-size: 16px;
+  }
+  .box-1 h1,
+  .box-2 h1 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  .line {
+    display: flex;
+    flex-direction: column;
+  }
+  .circle {
+    margin-top: 50%;
+  }
+}
