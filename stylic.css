@@ -203,6 +203,9 @@ nav {
   .box-1 p {
     font-size: 12px;
   }
+    .nav-links a {
+    margin: 0px 1px;
+  }
 }
 @media screen and (max-width: 930px) {
   .nav-links a {
